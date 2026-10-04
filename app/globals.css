@@ -1,1 +1,38 @@
 @import 'tailwindcss';
+
+:root {
+  --accent: var(--color-yellow-400);
+}
+
+@theme inline {
+  --color-accent: var(--accent);
+
+  --font-sans: var(--font-outfit);
+  --font-mono: var(--font-dm-mono);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    word-spacing: 0.1em;
+  }
+
+  h1 {
+    @apply text-4xl leading-loose font-extrabold;
+  }
+
+  h2 {
+    @apply pb-4 text-xl font-bold text-gray-500;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  p {
+    @apply leading-relaxed text-gray-600;
+  }
+}
