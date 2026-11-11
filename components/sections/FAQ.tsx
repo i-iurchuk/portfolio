@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import Section from '@/components/Section';
-import { faqList } from '@/data/faq';
+import { faqList } from '@/data';
 import { cn } from '@/lib/utils';
 import { FaqItem as FaqItemType } from '@/types';
 
